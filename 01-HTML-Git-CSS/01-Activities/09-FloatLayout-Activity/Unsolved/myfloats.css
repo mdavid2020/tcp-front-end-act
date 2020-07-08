@@ -1,0 +1,110 @@
+HTML CSSResult
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+}
+
+div {
+}
+
+header {
+  color: #333;
+  background: #ffa500;
+
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Yes, I used table, and I'm not ashamed of it. Inspiration drawn from: https://colintoh.com/blog/display-table-anti-hero */
+/* Ultimately, there are quite a few ways you can do this. */
+
+#topBlockSection {
+  display: table;
+  width: 100%;
+}
+
+#left {
+  color: white;
+  background-color: #30948d;
+
+  padding: 20px;
+
+  display: table-cell;
+}
+
+#middle {
+  color: white;
+  background-color: #9e1212;
+
+  padding: 20px;
+
+  display: table-cell;
+}
+
+#right {
+  color: white;
+  background-color: #30948d;
+
+  padding: 20px;
+
+  display: table-cell;
+}
+
+#full {
+  color: white;
+  background-color: #394549;
+
+  height: 200px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#division {
+  background-color: #6ea3da;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  margin-top: 20px;
+}
+
+aside {
+  background-color: #a6b747;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+
+  height: 150px;
+  width: 300px;
+
+  padding-top: 20px;
+
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  float: left;
+}
+
+footer {
+  padding: 20px;
+
+  background-color: #ffa500;
+}

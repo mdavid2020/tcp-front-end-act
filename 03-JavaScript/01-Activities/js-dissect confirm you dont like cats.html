@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Data Types, User Input, Conditional Logic
+    </title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+      var userName = prompt("What's your name?");
+      var confirmCats = confirm("Do you like cats?"); //if click cancel, it displays (24) the [ELSE] alert after the if(confirm-variable) if (confimCats) 
+
+      var petName = "Meeses";
+      var petType = "Tuxedo Cat";
+      var petAge = 5;
+      var petIsCat = true;
+
+      if (confirmCats) {
+        alert(petName + " " + petType + " " + petAge); 
+      }
+      else {
+        alert("You don't get my cat's information");//Click ok->it goes to next if(var) 27, then ok
+      }
+
+      if (petIsCat) {
+        alert("My pet is a cat");//CLICK OK, goes to next if(var) 35
+      }
+      else {
+        alert("My pet is not a cat");
+      }
+
+      if (petAge !== 7) {
+        alert("My pet is not 7 years old");//goes to next if(var) 38, then ok
+      }
+
+      if (petAge === 5) {
+        alert("My pet is 5 years old"); //skips the else ifs and show the alert (45)
+      }
+      else if (petAge < 5) {
+        alert("My pet is less than 5 years old");
+      }
+      else if (petAge > 5) {
+        alert("My pet is older than 5 years old");
+      }
+
+      alert("Welcome to our page " + userName);//
+
+      var catAge = prompt("How old is your cat?");//cancel
+
+      // Won't work as expected
+      alert(catAge + 2); //if you dont enter a number ->2
+
+      // Works as expected
+      alert(parseInt(catAge) + 2);//NaN
+
+    </script>
+  </body>
+</html>
